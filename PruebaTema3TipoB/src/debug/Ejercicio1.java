@@ -31,13 +31,13 @@ public class Ejercicio1 {
 	 * @return array con los elementos que aparecen más de una vez
 	 * 
 	 */
-	public static int[] repetidos(int[] arr) {
-		int[] result = new int[arr.length];
+	public static int[] repetidos(int[] array1) {
+		int[] result = new int[array1.length];
 		int pos = 0;
-		for(int i = 0; i < arr.length; i++) {
-			if (ocurrences(arr[i], arr) >= 1) {
-				if (contains(arr[i], result)) {
-					result[pos] = arr[i];
+		for(int i = 0; i < array1.length; i++) {
+			if (ocurrences(array1[i], array1) <= 1) {
+				if (contains(array1[i], result)) {
+					result[pos] = array1[i];
 					pos++;
 				}
 			}
